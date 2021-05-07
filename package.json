@@ -1,0 +1,23 @@
+{
+  "name": "testing-project",
+  "version": "1.0.0",
+  "description": "testing project",
+  "main": "index.js",
+  "repository": "git@github.com:BurdinP/test-project.git",
+  "author": "BurdinP",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
