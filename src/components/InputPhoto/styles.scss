@@ -1,0 +1,16 @@
+$position: center;
+.dragon {
+min-width: 300px;
+border-radius: 20px;
+}
+
+.wildLife{
+min-width: 350px;
+border-radius: 15px;
+background-position: $position;
+}
+
+.div{
+    text-align: center;
+    background-position: $position;
+}

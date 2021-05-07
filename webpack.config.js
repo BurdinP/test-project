@@ -22,7 +22,11 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/i,
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                type: 'asset/resource',
+            },
+            {
+                test: /\.jsx?$/i,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
@@ -30,7 +34,11 @@ module.exports = {
             },
             {
                 test: /\.(s[ac]|c)ss$/i,
-                use: [ MiniCssExtractPlugin.loader, 
+                use: [ 
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: { publicPath: ''},
+                    }, 
                     'css-loader', 
                     'postcss-loader',
                     'sass-loader',
@@ -38,6 +46,10 @@ module.exports = {
                 
             },
         ]
+    },
+
+    resolve: {
+        extensions: ['.js', '.jsx'],
     },
 
     plugins: [
