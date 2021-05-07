@@ -14,6 +14,10 @@ module.exports = {
 
     devtool: 'source-map',
 
+    output: {
+        assetModuleFilename: 'images/[hash][ext][query]'
+    },
+
     devServer: {
         contentBase: './dist',
         hot: true,
@@ -23,7 +27,7 @@ module.exports = {
         rules: [
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,
-                type: 'asset/resource',
+                type: 'asset',
             },
             {
                 test: /\.jsx?$/i,
