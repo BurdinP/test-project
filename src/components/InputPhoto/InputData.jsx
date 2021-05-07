@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import dragon from '../../Images/dragon.jpg';
+import dragon from '../../Images/dragon.jpg'
 import wildLife from '../../Images/wild-life.jpg'
 import './styles.scss';
 
-const Inputs = () => {
+export const Inputs = () => {
   
   const src='';
   const Alt='photo';
@@ -36,4 +36,4 @@ const Inputs = () => {
   )
 }
 
-export default Inputs;
+

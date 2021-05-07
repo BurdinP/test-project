@@ -1,21 +1,18 @@
 import React from 'react'
 import '../styles/index.scss'
-import Inputs from './InputPhoto/InputData'
+import {Inputs} from './InputPhoto/InputData'
 
-const App = () => {
-    return (
-        <>
-        <section className="spiro" ></section>
-        <main>
-            <section>
-                <h1 className="body">
-                     Hi!
-                </h1>
-            </section>
-        </main>
-        <Inputs />
-        </>
-    )
-}
+const App = () => (
+    <>
+        
+            <div>
+                <h1 className = 'body'> Hi! </h1>
+            </div>
+            <div>
+                <Inputs />
+            </div>
+    </>    
+    
+)
 
 export default App;
